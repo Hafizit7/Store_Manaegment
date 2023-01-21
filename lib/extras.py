@@ -23,7 +23,7 @@ class ExtrasWindow(ttk.Frame, ThemeEngine):
 
         self.master = master
         # Setting Window Title
-        master.title("Inventory Management System\ Extras")
+        master.title("Store Management System\ Extras")
         # Connecting to Database
         self.db_obj = db_obj = db.Database()   
         

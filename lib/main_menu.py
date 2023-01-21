@@ -32,7 +32,7 @@ class MainMenuWindow(ttk.Frame, ThemeEngine):
                                              x_cordinate, y_cordinate))
         master.resizable(0,0) # Disabling resize
         # Setting Window Title
-        master.title("Inventory Management System")
+        master.title("Store Management System")
         # Adding icon to title menu
         master.iconbitmap("images/stock_title_icon.ico")
 
@@ -53,7 +53,7 @@ class MainMenuWindow(ttk.Frame, ThemeEngine):
                         command=lambda: master.switch_frame(LoginWindow, bg_frame))
         logout_btn.place(relwidth=0.155, relheight=1)
         # Title Label
-        title_label = ttk.Label(title_frame, text="MAIN MENU",
+        title_label = ttk.Label(title_frame, text="Barguna Lab Store",
                                  font="Arial 60 bold", foreground='#22d3fe')
         title_label.pack()
         # Date and Time Label
@@ -70,7 +70,7 @@ class MainMenuWindow(ttk.Frame, ThemeEngine):
         body_frame.place(x=20, y=140, relwidth=0.97, relheight=0.765)
 
         # Program Title
-        program_title_label = ttk.Label(body_frame, text="INVENTORY MANAGEMENT SYSTEM",
+        program_title_label = ttk.Label(body_frame, text="STORE MANAGEMENT SYSTEM",
                                      font="Arial 45 bold", foreground='#4eacfe')
         program_title_label.place(x=110, y=40)
 
@@ -83,7 +83,7 @@ class MainMenuWindow(ttk.Frame, ThemeEngine):
 
         # Inventory Button
         self.inventory_btn_img = tk.PhotoImage(file = r"images/inventory_button.png")
-        inventory_button = tk.Button(body_frame , text="Inventory", image=self.inventory_btn_img,
+        inventory_button = tk.Button(body_frame , text="Store", image=self.inventory_btn_img,
                                  bd=0, bg=self.button_bg, activebackground=self.button_bg,
                         command=lambda: master.switch_frame(InventoryWindow, bg_frame))
         inventory_button.grid(row=0, column=1, padx=(60,30))

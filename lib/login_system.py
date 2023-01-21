@@ -28,7 +28,7 @@ class LoginWindow(ttk.Frame, ThemeEngine):
                         x_cordinate, y_cordinate))
         master.resizable(0,0)       # Disabling resize
         # Setting Window Title
-        master.title("Inventory Management System/ Login")
+        master.title("Store Management System/ Login")
         # Adding icon to title menu
         master.iconbitmap("images/login_title_icon.ico")
         

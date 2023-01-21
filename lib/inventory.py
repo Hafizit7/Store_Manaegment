@@ -43,7 +43,7 @@ class InventoryWindow(tk.Frame, ThemeEngine):
                             command=lambda: master.switch_frame(main_menu.MainMenuWindow, bg_frame))
         back_btn.pack(side="left", padx=50)
         # Title Label
-        title_label = ttk.Label(title_frame, text="INVENTORY ",
+        title_label = ttk.Label(title_frame, text="Store ",
                                 font="Arial 60 bold", foreground='#22d3fe')
         title_label.pack(side="left", padx=240)
         # Time Label
